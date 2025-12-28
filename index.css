@@ -1,0 +1,189 @@
+#content-area {
+    position: relative;
+    height: 100vh; /* ensures it fills the viewport */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-image: url('../assets/images/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#countdown-section {
+    width:50%;
+    height: calc(100vh - var(--nav-height));
+    background:none;
+    border: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.countdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: clamp(30px, 10vw, 70px);
+    padding-bottom: clamp(20px, 5vw, 40px);
+}
+
+#hourglass {
+    position: relative;
+}
+
+#countdown {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #eaeaea;
+    font-size: clamp(10px, 4vw, 30px);
+    white-space: nowrap;
+      font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#right-content {
+    width: 50%;
+    height: auto;
+    overflow: visible;
+    background: none;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+
+#teaser-section {
+    width:calc(100% - 80px);
+    margin: 40px;
+    height:calc(100vh - var(--nav-height) - 250px); /* yung 250px yung gagalawin nyo. same sa others like this */
+    
+    border: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+#teaser-section h1 {
+    color:#e6e6e6;
+    font-size: 2.5vw;
+    margin: 0 auto;
+    text-align: left;
+     font-family: "Playwrite Australia QLD";
+  font-weight: 400;
+  font-style: italic;
+}
+
+  
+
+p {
+      font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+button{
+      font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;   
+}
+#timeline-section {
+    width:calc(100% - 80px);
+    margin: 40px;
+    height:calc(100vh - var(--nav-height) - 400px);
+    background-color:#201010;
+    border: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing: border-box;
+}
+
+#timeline-section h1 {
+    color:#fff;
+    font-size: clamp(30px, 6vw, 80px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1050px) {
+    #main-page {
+        height: calc(100vh - var(--nav-height));
+        overflow-y: auto;
+    }
+
+    #content-area {
+        flex-direction: column;
+         height: auto;
+        min-height: calc(100vh - var(--nav-height));
+    }
+
+    #countdown-section {
+         position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+        padding-bottom: 20px;
+    }
+
+    #right-content {
+         width: 100%;
+        height: auto;
+    }
+
+    #teaser-section {
+        width: calc(100% - 40px);
+        margin: 20px;
+        height: auto;
+        min-height: unset;
+        padding-bottom: 40px;
+    }
+
+    #teaser-section h1 {
+        font-size: clamp(20px, 6vw, 36px);
+        text-align: left;
+    }
+
+    #timeline-section {
+        width: calc(100% - 40px);
+        margin: 20px;
+        height: 35vh;
+    }
+
+    #timeline-section h1 {
+        font-size: clamp(20px, 8vw, 65px);
+    }
+
+   
+    
+    #countdown {
+        font-size: clamp(16px, 8vw, 48px);
+    }
+}
+
+@media screen and (max-width: 525px) {
+  
+    
+    #content-area {
+        flex-direction: column;
+    }
+
+    #right-content {
+        margin-top: 3%;
+    }
+
+    #countdown {
+        font-size: clamp(16px, 8vw, 32px);
+    }
+}
