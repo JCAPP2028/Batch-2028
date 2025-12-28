@@ -9,7 +9,7 @@
     position: absolute;
     z-index: 1;
 
-    background-image: url('../assets/images/Hourglass.png');
+    background-image: url('Hourglass.png');
     background-size: contain;
     background-position: center;
 }
@@ -43,14 +43,14 @@
     width: 90%;
     height: 100%;
 
-    background-image: url('../assets/images/Sand.jpg');
+    background-image: url('Sand.jpg');
 }
 
 #hourglass #sand-bottom {
     width: 90%;
     height: 100%;
 
-    background-image: url('../assets/images/Sand.jpg');
+    background-image: url('Sand.jpg');
 }
 
 #top-container, #bottom-container {
@@ -98,4 +98,5 @@
 #countdown-container {
     width: 512px;
     height: 100px;
+
 }
